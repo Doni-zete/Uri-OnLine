@@ -10,8 +10,8 @@ let input = require("fs").readFileSync("stdin", "utf8");
 
 let numeros = input.split("\n");
 
-let A = parseInt(numeros.shift()) ;
-let B = parseInt(numeros.shift()) ;
+let A = parseInt(numeros.shift());
+let B = parseInt(numeros.shift());
 
 let SOMA = A + B;
 
