@@ -1,5 +1,3 @@
-#include <iostream>
-#include <iomanip>
 
 /* Escreva um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
 
@@ -9,20 +7,24 @@ O arquivo de entrada contém 2 números inteiros e 1 número com duas casas deci
 Saída
 Imprima o número e o salário do funcionário, conforme exemplo fornecido, com um espaço em branco antes e depois da igualdade. No caso do salário, também deve haver um espaço em branco após o $. */
 
+#include <iostream>
+#include <iomanip>
+ 
 using namespace std;
 
 int main()
 {
-    int number;
-    float hora, salario, resultado;
+    int number,hora;
+    float salario, resultado;
     cin >> number;
-    cin >> salario;
     cin >> hora;
+    cin >> salario;
+    
 
     resultado = salario * hora;
     cout << "NUMBER = " << number << endl;
-    std::cout << std::fixed << std::setprecision(2);
-    cout << "SALARY = U$ " << resultado;
+   cout << fixed << setprecision(2);
+    cout << "SALARY = U$ " << resultado<<endl;
 
     return 0;
 }
